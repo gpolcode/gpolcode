@@ -1,8 +1,8 @@
 # Define JSON files
 $JsonFiles = @("1.json", "2.json")
 
-# Function to get Boss ID from WowDB PTR (with fuzzy search backup)
-Function Get-BossIdFromWowDB {
+# Function to get Boss IDs from WowDB PTR
+Function Get-BossIdsFromWowDB {
     param(
         [string]$BossName
     )
@@ -22,42 +22,22 @@ Function Get-BossIdFromWowDB {
         return $null
     }
 
-    # Extract the first NPC ID from the WowDB search results
-    $BossIdMatch = $HtmlContent | Select-String -Pattern 'href="https://ptr.wowdb.com/npcs/(\d+)-[^"]+"' | Select-Object -First 1
-
-    # If Boss ID is found, return it
-    If ($BossIdMatch) {
-        $BossId = $BossIdMatch.Matches.Groups[1].Value
-        Write-Host "✅ Found Boss ID: $BossId"
-        return $BossId
-    } Else {
-        Write-Host "⚠ No exact match found. Trying fuzzy search..."
-
-        # Fuzzy Search: Use first 2 letters of Boss Name
-        $FuzzyName = $BossName.Substring(0, [math]::Min(2, $BossName.Length))
-        $FuzzySearchUrl = "https://ptr.wowdb.com/npcs?filter-search=$FuzzyName"
-        Write-Host "🔗 WowDB Fuzzy Search URL: $FuzzySearchUrl"
-
-        Try {
-            $FuzzyResponse = Invoke-WebRequest -Uri $FuzzySearchUrl -UseBasicParsing
-            $FuzzyHtmlContent = $FuzzyResponse.Content
-        } Catch {
-            Write-Host "❌ Failed to fetch WowDB fuzzy search results."
-            return $null
+    # Extract all NPC IDs from the WowDB search results
+    $BossIdMatches = $HtmlContent | Select-String -Pattern 'href="https://ptr.wowdb.com/npcs/(\d+)-[^"]+"' -AllMatches
+    
+    # If no Boss IDs are found, return null
+    If (-not $BossIdMatches) {
+        If ($BossName.Length -ne 2) {
+            return Get-BossIdsFromWowDB -BossName $BossName.Substring(0, [math]::Min(2, $BossName.Length))
         }
 
-        # Extract NPC ID from fuzzy search results
-        $FuzzyBossIdMatch = $FuzzyHtmlContent | Select-String -Pattern 'href="https://ptr.wowdb.com/npcs/(\d+)-[^"]+"' | Select-Object -First 1
-
-        If ($FuzzyBossIdMatch) {
-            $FuzzyBossId = $FuzzyBossIdMatch.Matches.Groups[1].Value
-            Write-Host "✅ Found Boss ID via fuzzy search: $FuzzyBossId"
-            return $FuzzyBossId
-        } Else {
-            Write-Host "❌ No Boss ID found even with fuzzy search."
-            return $null
-        }
+        Write-Host "❌ No NPC IDs found for: $BossName"
+        return $null
     }
+
+    # Extract all Boss IDs
+    $BossIds = $BossIdMatches.Matches | ForEach-Object { $_.Groups[1].Value }
+    return $BossIds
 }
 
 # Function to get the Wowhead boss image URL using the Boss ID
@@ -120,20 +100,26 @@ ForEach ($JsonFile in $JsonFiles) {
 
         ForEach ($Boss in $Dungeon.Value.PSObject.Properties) {
             $BossName = $Boss.Name
-            $BossId = Get-BossIdFromWowDB -BossName $BossName
-            $ImageUrl = Get-WowheadImageUrl -BossId $BossId -BossName $BossName
+            $BossIds = Get-BossIdsFromWowDB -BossName $BossName
 
-            # Update JSON with the new image URL
-            $UpdatedDungeons[$DungeonName][$BossName] = @{
-                "hints" = $Boss.Value.hints
-                "image" = $ImageUrl
+            ForEach ($BossId in $BossIds) {
+                $ImageUrl = Get-WowheadImageUrl -BossId $BossId -BossName $BossName
+                If ($ImageUrl) {
+                    Write-Host "🌟 Boss: $BossName (ID: $BossId) has a screenshot on Wowhead."
+                    
+                    $UpdatedDungeons[$DungeonName][$BossName] = @{
+                        "hints" = $Boss.Value.hints
+                        "image" = $ImageUrl
+                    }
+                    
+                    Break # Stop checking after the first valid screenshot
+                }
             }
         }
     }
 
     # Save the updated JSON file
-    $UpdatedJsonFile = "Updated_$JsonFile"
-    $UpdatedDungeons | ConvertTo-Json -Depth 3 | Set-Content $UpdatedJsonFile
+    $UpdatedDungeons | ConvertTo-Json -Depth 3 | Set-Content $JsonFile
 
-    Write-Host "✔ Updated JSON saved as $UpdatedJsonFile"
+    Write-Host "✔ Updated JSON saved as $JsonFile"
 }

@@ -83,7 +83,7 @@
                 const bossGrid = document.createElement("div");
                 bossGrid.className = "boss-grid";
 
-                for (const [bossName, bossData] of Object.entries(bosses)) {
+                for (const [bossName, bossData] of Object.entries(bosses).reverse()) {
                     const bossCard = document.createElement("div");
                     bossCard.className = "boss-card";
 

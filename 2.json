@@ -1,88 +1,73 @@
 {
-  "Priory of the Sacred Flame": {
-    "Baron Braunpyke": {
-      "hints": ["Soak pyre charges or wipe.", "Dodge swirling hammers."],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184609-baron-braunpyke.jpg"
-    },
-    "Prioress Murrpray": {
-      "hints": [
-        "Face away from Blinding Light.",
-        "Break boss shield before channel."
-      ],
-      "image": null
-    },
-    "Captain Dailcry": {
-      "hints": [
-        "Interrupt the boss shout.",
-        "Break shield fast to free player."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184600-captain-dailcry.jpg"
-    }
-  },
-  "Mechagon: Workshop": {
-    "K.U.-J.0": {
-      "hints": ["Hide behind Junk Cubes.", "Dispel tank DoT carefully."],
-      "image": null
-    },
-    "Machinist’s Garden": {
-      "hints": ["Avoid hedges and fire cannons.", "Keep moving at all times."],
-      "image": null
-    },
-    "Tussle Tonks": {
-      "hints": ["Break plating with hammers.", "Dodge the tank charge."],
-      "image": null
-    },
-    "King Mechagon": {
-      "hints": ["Avoid getting hit by orbs.", "Use cooldowns for Magneto Arm."],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1021697-king-mechagon.jpg"
-    }
-  },
   "The Motherlode!!": {
+    "Rixxa Fluxflume": {
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/94374-techs-rickard-rustbolt.jpg",
+      "hints": ["Control azerite puddles.", "Avoid swirlies."]
+    },
     "Mogul Razdunk": {
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/914062-mogul-razdunk.jpg",
       "hints": [
         "Break 3 pillars in Phase 2.",
         "Dodge missiles and Gatling Gun."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/914062-mogul-razdunk.jpg"
+      ]
     },
     "Coin-Operated Crowd Pummeler": {
-      "hints": ["Kick footbombs at boss.", "Move boss away from coins."],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/914112-coin-operated-crowd-pummeler.jpg"
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/914112-coin-operated-crowd-pummeler.jpg",
+      "hints": ["Kick footbombs at boss.", "Move boss away from coins."]
+    }
+  },
+  "Priory of the Sacred Flame": {
+    "Baron Braunpyke": {
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184609-baron-braunpyke.jpg",
+      "hints": ["Soak pyre charges or wipe.", "Dodge swirling hammers."]
     },
-    "Rixxa Fluxflume": {
-      "hints": ["Control azerite puddles.", "Avoid swirlies."],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/94374-techs-rickard-rustbolt.jpg"
+    "Prioress Murrpray": {
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184617-prioress-murrpray.jpg",
+      "hints": [
+        "Face away from Blinding Light.",
+        "Break boss shield before channel."
+      ]
     },
-    "Azerokk": {
-      "hints": ["Kill empowered add fast.", "Dodge boss frontal cone."],
-      "image": null
+    "Captain Dailcry": {
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184600-captain-dailcry.jpg",
+      "hints": [
+        "Interrupt the boss shout.",
+        "Break shield fast to free player."
+      ]
     }
   },
   "Darkflame Crest": {
-    "Blazikon": {
-      "hints": [
-        "Keep at least 1 candle unlit.",
-        "Avoid igniting room candles."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1185598-blazikon.jpg"
-    },
     "The Darkness": {
-      "hints": ["Stay in candlelight or do no damage.", "Interrupt add spawn."],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/659183-under-cover-of-darkness-quest-speak-with-taoshi-kill-credit.jpg"
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/659183-under-cover-of-darkness-quest-speak-with-taoshi-kill-credit.jpg",
+      "hints": ["Stay in candlelight or do no damage.", "Interrupt add spawn."]
     },
     "The Candle King": {
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184652-the-candle-king.jpg",
       "hints": [
         "Interrupt Paranoid Mind (fear).",
         "Block pickaxe with a statue."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184652-the-candle-king.jpg"
+      ]
+    },
+    "Blazikon": {
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1185598-blazikon.jpg",
+      "hints": ["Keep at least 1 candle unlit.", "Avoid igniting room candles."]
     },
     "Ol’ Waxbeard": {
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1185592-ol-waxbeard.jpg",
       "hints": [
         "Destroy mine cart or wipe.",
         "Kill adds before they stack bleeds."
-      ],
-      "image": null
+      ]
+    }
+  },
+  "Mechagon: Workshop": {
+    "Machinist’s Garden": {
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1080716-aronus.jpg",
+      "hints": ["Avoid hedges and fire cannons.", "Keep moving at all times."]
+    },
+    "King Mechagon": {
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1021697-king-mechagon.jpg",
+      "hints": ["Avoid getting hit by orbs.", "Use cooldowns for Magneto Arm."]
     }
   }
 }
