@@ -24,6 +24,8 @@
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
         }
         .boss-card {
             background-color: #1e1e1e;
@@ -83,7 +85,7 @@
                 const bossGrid = document.createElement("div");
                 bossGrid.className = "boss-grid";
 
-                for (const [bossName, bossData] of Object.entries(bosses).reverse()) {
+                for (const [bossName, bossData] of Object.entries(bosses)) {
                     const bossCard = document.createElement("div");
                     bossCard.className = "boss-card";
 
