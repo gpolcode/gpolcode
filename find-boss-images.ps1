@@ -90,13 +90,9 @@ ForEach ($JsonFile in $JsonFiles) {
     # Read the JSON file
     $Dungeons = Get-Content $JsonFile | ConvertFrom-Json
 
-    # Updated JSON structure
-    $UpdatedDungeons = @{}
-
     # Loop through dungeons and bosses
     ForEach ($Dungeon in $Dungeons.PSObject.Properties) {
         $DungeonName = $Dungeon.Name
-        $UpdatedDungeons[$DungeonName] = @{}
 
         ForEach ($Boss in $Dungeon.Value.PSObject.Properties) {
             $BossName = $Boss.Name
@@ -105,13 +101,8 @@ ForEach ($JsonFile in $JsonFiles) {
             ForEach ($BossId in $BossIds) {
                 $ImageUrl = Get-WowheadImageUrl -BossId $BossId -BossName $BossName
                 If ($ImageUrl) {
-                    Write-Host "🌟 Boss: $BossName (ID: $BossId) has a screenshot on Wowhead."
-                    
-                    $UpdatedDungeons[$DungeonName][$BossName] = @{
-                        "hints" = $Boss.Value.hints
-                        "image" = $ImageUrl
-                    }
-                    
+                    Write-Host "🌟 Boss: $BossName (ID: $BossId) has a screenshot on Wowhead."                    
+                    $Boss.Value.image = $ImageUrl                    
                     Break # Stop checking after the first valid screenshot
                 }
             }
@@ -119,7 +110,7 @@ ForEach ($JsonFile in $JsonFiles) {
     }
 
     # Save the updated JSON file
-    $UpdatedDungeons | ConvertTo-Json -Depth 3 | Set-Content $JsonFile
+    $Dungeons | ConvertTo-Json -Depth 3 | Set-Content $JsonFile
 
     Write-Host "✔ Updated JSON saved as $JsonFile"
 }
