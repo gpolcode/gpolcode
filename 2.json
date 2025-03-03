@@ -1,115 +1,88 @@
 {
-  "Mechagon: Workshop": {
-    "Tussle Tonks": {
-      "hints": [
-        "Break plating with hammers.",
-        "Dodge the tank charge."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877929.jpg"
-    },
-    "K.U.-J.0": {
-      "hints": [
-        "Hide behind Junk Cubes.",
-        "Dispel tank DoT carefully."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877930.jpg"
-    },
-    "Machinist’s Garden": {
-      "hints": [
-        "Avoid hedges and fire cannons.",
-        "Keep moving at all times."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877931.jpg"
-    },
-    "King Mechagon": {
-      "hints": [
-        "Avoid getting hit by orbs.",
-        "Use cooldowns for Magneto Arm."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877932.jpg"
-    }
-  },
-  "The Motherlode!!": {
-    "Coin-Operated Crowd Pummeler": {
-      "hints": [
-        "Kick footbombs at boss.",
-        "Move boss away from coins."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877933.jpg"
-    },
-    "Azerokk": {
-      "hints": [
-        "Kill empowered add fast.",
-        "Dodge boss frontal cone."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877934.jpg"
-    },
-    "Rixxa Fluxflume": {
-      "hints": [
-        "Control azerite puddles.",
-        "Avoid swirlies."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877935.jpg"
-    },
-    "Mogul Razdunk": {
-      "hints": [
-        "Break 3 pillars in Phase 2.",
-        "Dodge missiles and Gatling Gun."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877936.jpg"
-    }
-  },
-  "Darkflame Crest": {
-    "Ol’ Waxbeard": {
-      "hints": [
-        "Destroy mine cart or wipe.",
-        "Kill adds before they stack bleeds."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877937.jpg"
-    },
-    "Blazikon": {
-      "hints": [
-        "Keep at least 1 candle unlit.",
-        "Avoid igniting room candles."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877938.jpg"
-    },
-    "The Candle King": {
-      "hints": [
-        "Interrupt Paranoid Mind (fear).",
-        "Block pickaxe with a statue."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877939.jpg"
-    },
-    "The Darkness": {
-      "hints": [
-        "Stay in candlelight or do no damage.",
-        "Interrupt add spawn."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877940.jpg"
-    }
-  },
   "Priory of the Sacred Flame": {
-    "Captain Dailcry": {
-      "hints": [
-        "Interrupt the boss shout.",
-        "Break shield fast to free player."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877941.jpg"
-    },
     "Baron Braunpyke": {
-      "hints": [
-        "Soak pyre charges or wipe.",
-        "Dodge swirling hammers."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877942.jpg"
+      "hints": ["Soak pyre charges or wipe.", "Dodge swirling hammers."],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184609-baron-braunpyke.jpg"
     },
     "Prioress Murrpray": {
       "hints": [
         "Face away from Blinding Light.",
         "Break boss shield before channel."
       ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877943.jpg"
+      "image": null
+    },
+    "Captain Dailcry": {
+      "hints": [
+        "Interrupt the boss shout.",
+        "Break shield fast to free player."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184600-captain-dailcry.jpg"
+    }
+  },
+  "Mechagon: Workshop": {
+    "K.U.-J.0": {
+      "hints": ["Hide behind Junk Cubes.", "Dispel tank DoT carefully."],
+      "image": null
+    },
+    "Machinist’s Garden": {
+      "hints": ["Avoid hedges and fire cannons.", "Keep moving at all times."],
+      "image": null
+    },
+    "Tussle Tonks": {
+      "hints": ["Break plating with hammers.", "Dodge the tank charge."],
+      "image": null
+    },
+    "King Mechagon": {
+      "hints": ["Avoid getting hit by orbs.", "Use cooldowns for Magneto Arm."],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1021697-king-mechagon.jpg"
+    }
+  },
+  "The Motherlode!!": {
+    "Mogul Razdunk": {
+      "hints": [
+        "Break 3 pillars in Phase 2.",
+        "Dodge missiles and Gatling Gun."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/914062-mogul-razdunk.jpg"
+    },
+    "Coin-Operated Crowd Pummeler": {
+      "hints": ["Kick footbombs at boss.", "Move boss away from coins."],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/914112-coin-operated-crowd-pummeler.jpg"
+    },
+    "Rixxa Fluxflume": {
+      "hints": ["Control azerite puddles.", "Avoid swirlies."],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/94374-techs-rickard-rustbolt.jpg"
+    },
+    "Azerokk": {
+      "hints": ["Kill empowered add fast.", "Dodge boss frontal cone."],
+      "image": null
+    }
+  },
+  "Darkflame Crest": {
+    "Blazikon": {
+      "hints": [
+        "Keep at least 1 candle unlit.",
+        "Avoid igniting room candles."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1185598-blazikon.jpg"
+    },
+    "The Darkness": {
+      "hints": ["Stay in candlelight or do no damage.", "Interrupt add spawn."],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/659183-under-cover-of-darkness-quest-speak-with-taoshi-kill-credit.jpg"
+    },
+    "The Candle King": {
+      "hints": [
+        "Interrupt Paranoid Mind (fear).",
+        "Block pickaxe with a statue."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184652-the-candle-king.jpg"
+    },
+    "Ol’ Waxbeard": {
+      "hints": [
+        "Destroy mine cart or wipe.",
+        "Kill adds before they stack bleeds."
+      ],
+      "image": null
     }
   }
 }
