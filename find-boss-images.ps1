@@ -96,14 +96,22 @@ ForEach ($JsonFile in $JsonFiles) {
 
         ForEach ($Boss in $Dungeon.Value.PSObject.Properties) {
             $BossName = $Boss.Name
-            $BossIds = Get-BossIdsFromWowDB -BossName $BossName
+            $BossId = $Boss.Value.NpcId
 
-            ForEach ($BossId in $BossIds) {
+            If ($BossId) {
                 $ImageUrl = Get-WowheadImageUrl -BossId $BossId -BossName $BossName
-                If ($ImageUrl) {
-                    Write-Host "🌟 Boss: $BossName (ID: $BossId) has a screenshot on Wowhead."                    
-                    $Boss.Value.image = $ImageUrl                    
-                    Break # Stop checking after the first valid screenshot
+                $Boss.Value.image = $ImageUrl
+            } else {
+                $BossIds = Get-BossIdsFromWowDB -BossName $BossName
+
+                ForEach ($BossId in $BossIds) {
+                    $ImageUrl = Get-WowheadImageUrl -BossId $BossId -BossName $BossName
+                    If ($ImageUrl) {
+                        Write-Host "🌟 Boss: $BossName (ID: $BossId) has a screenshot on Wowhead."                    
+                        $Boss.Value.image = $ImageUrl
+                        $Boss.Value | Add-Member -NotePropertyName NpcId -NotePropertyValue $BossId    
+                        Break # Stop checking after the first valid screenshot
+                    }
                 }
             }
         }
