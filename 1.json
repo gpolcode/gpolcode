@@ -1,0 +1,115 @@
+{
+  "Theater of Pain": {
+    "Affront of Challengers": {
+      "hints": [
+        "Dodge Decaying Breath.",
+        "Interrupt Searing Death."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877944.jpg"
+    },
+    "Xav the Unfallen": {
+      "hints": [
+        "Kill banners ASAP.",
+        "Win duel or group gets weaker."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877945.jpg"
+    },
+    "Gorechop": {
+      "hints": [
+        "Move through gaps in meat hooks.",
+        "Stay in melee or get pulled in."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877946.jpg"
+    },
+    "Mordretha": {
+      "hints": [
+        "CC or kill Deathwalker adds.",
+        "Avoid ghost charges."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877947.jpg"
+    }
+  },
+  "Cinderbrew Meadery": {
+    "Brewmaster Aldryr": {
+      "hints": [
+        "Serve all patrons or boss is immune.",
+        "Avoid stun clouds."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877948.jpg"
+    },
+    "Benk Buzzbee": {
+      "hints": [
+        "Tank DoT explodes on expiration.",
+        "Kill bees before they stack up."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877949.jpg"
+    },
+    "I’pa": {
+      "hints": [
+        "Kill Brew Drops before they reach boss.",
+        "Avoid swirlies or get trapped."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877950.jpg"
+    },
+    "Goldie Baronbottom": {
+      "hints": [
+        "Exploding barrels = lethal.",
+        "Use cooldowns for Let It Hail."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877951.jpg"
+    }
+  },
+  "The Rookery": {
+    "Kyrioss": {
+      "hints": [
+        "Dodge rotating lightning beams.",
+        "Spread out for Crashing Thunder."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877952.jpg"
+    },
+    "Stormguard Gorren": {
+      "hints": [
+        "Pass DoT so no one gets it twice.",
+        "Move out of leap impact."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877953.jpg"
+    },
+    "Voidstone Monstrosity": {
+      "hints": [
+        "Destroy fragments before adds spawn.",
+        "Time shield break carefully."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877954.jpg"
+    }
+  },
+  "Operation Floodgate": {
+    "Big M.O.M.M.A.": {
+      "hints": [
+        "Kill Mechadrones fast.",
+        "Interrupt Maximum Distortion."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877955.jpg"
+    },
+    "Demolition Duo": {
+      "hints": [
+        "Knock bombs away before detonation.",
+        "Kill both bosses close together."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877956.jpg"
+    },
+    "Swampface": {
+      "hints": [
+        "Stay with your chain partner.",
+        "Tank must be topped off for buster."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877957.jpg"
+    },
+    "Geezle Gigazap": {
+      "hints": [
+        "Use cooldowns for Turbo Charge.",
+        "Don’t electrify the water."
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877958.jpg"
+    }
+  }
+}

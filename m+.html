@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythic+ Dungeon Guide</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .dungeon {
+            margin-bottom: 30px;
+        }
+        .dungeon-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .boss-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .boss-card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+        }
+        .boss-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .boss-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        .hints {
+            font-size: 14px;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        async function loadJSON(file) {
+            const response = await fetch(file);
+            return response.json();
+        }
+
+        async function generateGuide() {
+            const jsonFiles = ["1.json", "2.json"];
+            let dungeonData = {};
+
+            // Load both JSON files and merge them
+            for (const file of jsonFiles) {
+                const data = await loadJSON(file);
+                Object.assign(dungeonData, data);
+            }
+
+            const container = document.createElement("div");
+
+            for (const [dungeonName, bosses] of Object.entries(dungeonData)) {
+                const dungeonDiv = document.createElement("div");
+                dungeonDiv.className = "dungeon";
+
+                const dungeonTitle = document.createElement("div");
+                dungeonTitle.className = "dungeon-title";
+                dungeonTitle.textContent = dungeonName;
+
+                const bossGrid = document.createElement("div");
+                bossGrid.className = "boss-grid";
+
+                for (const [bossName, bossData] of Object.entries(bosses)) {
+                    const bossCard = document.createElement("div");
+                    bossCard.className = "boss-card";
+
+                    const bossImage = document.createElement("img");
+                    bossImage.src = bossData.image;
+                    bossImage.alt = bossName;
+
+                    const bossTitle = document.createElement("div");
+                    bossTitle.className = "boss-name";
+                    bossTitle.textContent = bossName;
+
+                    const hintsDiv = document.createElement("div");
+                    hintsDiv.className = "hints";
+                    hintsDiv.textContent = bossData.hints.join(" • ");
+
+                    bossCard.appendChild(bossImage);
+                    bossCard.appendChild(bossTitle);
+                    bossCard.appendChild(hintsDiv);
+                    bossGrid.appendChild(bossCard);
+                }
+
+                dungeonDiv.appendChild(dungeonTitle);
+                dungeonDiv.appendChild(bossGrid);
+                container.appendChild(dungeonDiv);
+            }
+
+            document.body.appendChild(container);
+        }
+
+        generateGuide();
+    </script>
+
+</body>
+</html>
