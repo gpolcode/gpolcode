@@ -1,18 +1,12 @@
 {
   "Theater of Pain": {
     "Affront of Challengers": {
-      "hints": [
-        "Dodge Decaying Breath.",
-        "Interrupt Searing Death."
-      ],
+      "hints": ["Dodge Decaying Breath.", "Interrupt Searing Death."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/817629-a-f-m-o-d.jpg",
       "NpcId": "134757"
     },
     "Xav the Unfallen": {
-      "hints": [
-        "Kill banners ASAP.",
-        "Win duel or group gets weaker."
-      ],
+      "hints": ["Kill banners ASAP.", "Win duel or group gets weaker."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1189716-xav-the-unfallen.jpg",
       "NpcId": "162329"
     },
@@ -25,20 +19,14 @@
       "NpcId": "162317"
     },
     "Mordretha": {
-      "hints": [
-        "CC or kill Deathwalker adds.",
-        "Avoid ghost charges."
-      ],
+      "hints": ["CC or kill Deathwalker adds.", "Avoid ghost charges."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1189725-mordretha-the-endless-empress.jpg",
       "NpcId": "165946"
     }
   },
   "Cinderbrew Meadery": {
     "Brewmaster Aldryr": {
-      "hints": [
-        "Serve all patrons or boss is immune.",
-        "Avoid stun clouds."
-      ],
+      "hints": ["Serve all patrons or boss is immune.", "Avoid stun clouds."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/79087-deprecated-for-4-x-brienna-starglow.jpg",
       "NpcId": "6576"
     },
@@ -95,10 +83,7 @@
   },
   "Operation Floodgate": {
     "Big M.O.M.M.A.": {
-      "hints": [
-        "Kill Mechadrones fast.",
-        "Interrupt Maximum Distortion."
-      ],
+      "hints": ["Kill Mechadrones fast.", "Interrupt Maximum Distortion."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/774039-the-big-bad-wolf.jpg",
       "NpcId": "17521"
     },
@@ -115,14 +100,16 @@
         "Stay with your chain partner.",
         "Tank must be topped off for buster."
       ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877934.jpg"
+      "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/123/124283.webp",
+      "NpcId": "226396"
     },
     "Geezle Gigazap": {
       "hints": [
         "Use cooldowns for Turbo Charge.",
         "Don't electrify the water."
       ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/877934.jpg"
+      "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/243/125939.webp",
+      "NpcId": "236950"
     }
   }
 }

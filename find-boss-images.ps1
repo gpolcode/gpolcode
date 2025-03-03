@@ -100,7 +100,10 @@ ForEach ($JsonFile in $JsonFiles) {
 
             If ($BossId) {
                 $ImageUrl = Get-WowheadImageUrl -BossId $BossId -BossName $BossName
-                $Boss.Value.image = $ImageUrl
+                
+                If ($ImageUrl) {
+                    $Boss.Value.image = $ImageUrl
+                }
             } else {
                 $BossIds = Get-BossIdsFromWowDB -BossName $BossName
 
