@@ -83,7 +83,7 @@
                 const bossGrid = document.createElement("div");
                 bossGrid.className = "boss-grid";
 
-                for (const [bossName, bossData] of Object.entries(bosses).reverse()) {
+                for (const [bossName, bossData] of Object.entries(bosses)) {
                     const bossCard = document.createElement("div");
                     bossCard.className = "boss-card";
 
@@ -102,7 +102,7 @@
                     bossCard.appendChild(bossImage);
                     bossCard.appendChild(bossTitle);
                     bossCard.appendChild(hintsDiv);
-                    bossGrid.appendChild(bossCard);
+                    bossGrid.prepend(bossCard);
                 }
 
                 dungeonDiv.appendChild(dungeonTitle);

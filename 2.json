@@ -1,60 +1,39 @@
 {
   "Mechagon: Workshop": {
     "Tussle Tonks": {
-      "hints": [
-        "Break plating with hammers.",
-        "Dodge the tank charge."
-      ],
+      "hints": ["Break plating with hammers.", "Dodge the tank charge."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/857060-the-platinum-pummeler.jpg",
       "NpcId": "144244"
     },
     "K.U.-J.0": {
-      "hints": [
-        "Hide behind Junk Cubes.",
-        "Dispel tank DoT carefully."
-      ],
+      "hints": ["Hide behind Junk Cubes.", "Dispel tank DoT carefully."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/858280-k-u-j-0.jpg",
       "NpcId": "144246"
     },
     "Machinist's Garden": {
-      "hints": [
-        "Avoid hedges and fire cannons.",
-        "Keep moving at all times."
-      ],
-      "image": "https://wow.zamimg.com/uploads/screenshots/normal/438444-sea-wolf-mackinley.jpg",
+      "hints": ["Avoid hedges and fire cannons.", "Keep moving at all times."],
+      "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/101/23397.webp",
       "NpcId": "144248"
     },
     "King Mechagon": {
-      "hints": [
-        "Avoid getting hit by orbs.",
-        "Use cooldowns for Magneto Arm."
-      ],
+      "hints": ["Avoid getting hit by orbs.", "Use cooldowns for Magneto Arm."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1099129-omega-buster.jpg",
       "NpcId": "144249"
     }
   },
   "The Motherlode!!": {
     "Coin-Operated Crowd Pummeler": {
-      "hints": [
-        "Kick footbombs at boss.",
-        "Move boss away from coins."
-      ],
+      "hints": ["Kick footbombs at boss.", "Move boss away from coins."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/914112-coin-operated-crowd-pummeler.jpg",
       "NpcId": "139904"
     },
     "Azerokk": {
-      "hints": [
-        "Kill empowered add fast.",
-        "Dodge boss frontal cone."
-      ],
+      "hints": ["Kill empowered add fast.", "Dodge boss frontal cone."],
       "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/179/83891.webp",
       "NpcId": "129227"
     },
     "Rixxa Fluxflame": {
-      "hints": [
-        "Control azerite puddles.",
-        "Avoid swirlies."
-      ],
+      "hints": ["Control azerite puddles.", "Avoid swirlies."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/914077-rixxa-fluxflame.jpg",
       "NpcId": "139273"
     },
@@ -93,10 +72,7 @@
       "NpcId": "222096"
     },
     "The Darkness": {
-      "hints": [
-        "Stay in candlelight or do no damage.",
-        "Interrupt add spawn."
-      ],
+      "hints": ["Stay in candlelight or do no damage.", "Interrupt add spawn."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1185604-the-darkness.jpg",
       "NpcId": "210797"
     }
@@ -111,10 +87,7 @@
       "NpcId": "207946"
     },
     "Baron Braunpyke": {
-      "hints": [
-        "Soak pyre charges or wipe.",
-        "Dodge swirling hammers."
-      ],
+      "hints": ["Soak pyre charges or wipe.", "Dodge swirling hammers."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184609-baron-braunpyke.jpg",
       "NpcId": "207939"
     },
