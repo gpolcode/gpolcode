@@ -47,6 +47,7 @@
         .hints {
             font-size: 14px;
             margin-top: 6px;
+            white-space: pre-line;
         }
     </style>
 </head>
@@ -95,7 +96,7 @@
 
                     const hintsDiv = document.createElement("div");
                     hintsDiv.className = "hints";
-                    hintsDiv.textContent = bossData.hints.join(" • ");
+                    hintsDiv.innerHTML = bossData.hints.join("<br>"); // Add line breaks between hints
 
                     bossCard.appendChild(bossImage);
                     bossCard.appendChild(bossTitle);
