@@ -78,10 +78,7 @@
       "NpcId": "207205"
     },
     "Voidstone Monstrosity": {
-      "hints": [
-        "Destroy fragments before adds spawn.",
-        "Time shield break carefully."
-      ],
+      "hints": ["Destroy fragments with circles.", "Dodge tank frontal."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1171058-voidstone-monstrosity.jpg",
       "NpcId": "207207"
     }
