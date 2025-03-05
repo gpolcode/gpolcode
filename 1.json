@@ -93,10 +93,7 @@
       "NpcId": "226398"
     },
     "Demolition Duo": {
-      "hints": [
-        "Knock bombs away before detonation.",
-        "Kill both bosses close together."
-      ],
+      "hints": ["Knock bombs away before detonation.", "Kill bosses together."],
       "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/103/122215.webp",
       "NpcId": "226402"
     },

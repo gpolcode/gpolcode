@@ -1,7 +1,7 @@
 {
   "Mechagon: Workshop": {
     "Tussle Tonks": {
-      "hints": ["Break plating with hammers.", "Kill both at the same time"],
+      "hints": ["Break plating with hammers.", "Kill bosses together"],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/857060-the-platinum-pummeler.jpg",
       "NpcId": "144244"
     },
