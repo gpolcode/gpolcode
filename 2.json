@@ -1,22 +1,26 @@
 {
   "Mechagon: Workshop": {
     "Tussle Tonks": {
-      "hints": ["Break plating with hammers.", "Kill at the same time"],
+      "hints": ["Break plating with hammers.", "Kill both at the same time"],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/857060-the-platinum-pummeler.jpg",
       "NpcId": "144244"
     },
     "K.U.-J.0": {
-      "hints": ["Hide behind Junk Cubes.", "Dispel tank DoT carefully."],
+      "hints": [
+        "Move circle away from Cubes",
+        "Hide behind Junk Cubes.",
+        "Dispel tank DoT carefully."
+      ],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/858280-k-u-j-0.jpg",
       "NpcId": "144246"
     },
     "Machinist's Garden": {
-      "hints": ["Avoid hedges and fire cannons.", "Kill add"],
+      "hints": ["Avoid hedges and fire cannons.", "Kill adds"],
       "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/101/23397.webp",
       "NpcId": "144248"
     },
     "King Mechagon": {
-      "hints": ["Avoid getting hit by orbs.", "Use cooldowns for Magneto Arm."],
+      "hints": ["Dodge orbs", "Dont stack", "Use cooldowns for Magneto Arm."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1099129-omega-buster.jpg",
       "NpcId": "144249"
     }
