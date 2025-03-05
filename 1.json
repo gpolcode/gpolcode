@@ -24,6 +24,15 @@
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1189718-gorechop.jpg",
       "NpcId": "162317"
     },
+    "Kul'tharok": {
+      "hints": [
+        "Stack during Draw Soul",
+        "Nuke adds",
+        "Interrupt bolt"
+      ],
+      "image": "https://wow.zamimg.com/uploads/screenshots/normal/1189723-kultharok.jpg",
+      "NpcId": "162309"
+    },
     "Mordretha": {
       "hints": [
         "CC or kill Deathwalker adds.",
