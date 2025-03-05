@@ -48,18 +48,12 @@
   },
   "Darkflame Crest": {
     "Ol' Waxbeard": {
-      "hints": [
-        "Destroy mine cart or wipe.",
-        "Kill adds before they stack bleeds."
-      ],
+      "hints": ["Destroy mine cart.", "Kill adds before they stack bleeds."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1185592-ol-waxbeard.jpg",
       "NpcId": "210153"
     },
     "Blazikon": {
-      "hints": [
-        "Keep at least 1 candle unlit.",
-        "Avoid igniting room candles."
-      ],
+      "hints": ["Light 1 candle with circle.", "Blow out 1 candle."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1185598-blazikon.jpg",
       "NpcId": "208743"
     },
