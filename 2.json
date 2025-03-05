@@ -32,19 +32,19 @@
       "NpcId": "139904"
     },
     "Azerokk": {
-      "hints": ["Kill empowered add fast.", "Dodge boss frontal cone."],
+      "hints": ["Kill empowered add.", "Dodge frontal."],
       "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/179/83891.webp",
       "NpcId": "129227"
     },
     "Rixxa Fluxflame": {
-      "hints": ["Control azerite puddles.", "Avoid swirlies."],
+      "hints": ["Point frontal at swirlies to clear them"],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/914077-rixxa-fluxflame.jpg",
       "NpcId": "139273"
     },
     "Mogul Razdunk": {
       "hints": [
-        "Break 3 pillars in Phase 2.",
-        "Dodge missiles and Gatling Gun."
+        "Move to pillar with mark in intermission",
+        "Dodge missiles and frontal."
       ],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/914062-mogul-razdunk.jpg",
       "NpcId": "131227"
