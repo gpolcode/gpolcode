@@ -77,15 +77,12 @@
   },
   "Priory of the Sacred Flame": {
     "Captain Dailcry": {
-      "hints": [
-        "Interrupt the boss shout.",
-        "Break shield fast to free player."
-      ],
+      "hints": ["Kill the doggo.", "Interrupt shout."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184600-captain-dailcry.jpg",
       "NpcId": "207946"
     },
     "Baron Braunpyke": {
-      "hints": ["Soak pyre charges or wipe.", "Dodge swirling hammers."],
+      "hints": ["Soak all charges.", "Dodge swirling hammers."],
       "image": "https://wow.zamimg.com/uploads/screenshots/normal/1184609-baron-braunpyke.jpg",
       "NpcId": "207939"
     },
