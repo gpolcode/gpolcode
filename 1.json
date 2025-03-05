@@ -90,23 +90,17 @@
       "NpcId": "226398"
     },
     "Demolition Duo": {
-      "hints": ["Knock bombs away before detonation.", "Kill bosses together."],
+      "hints": ["Kill bombs with charge & circle.", "Kill bosses together."],
       "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/103/122215.webp",
       "NpcId": "226402"
     },
     "Swampface": {
-      "hints": [
-        "Stay with your chain partner.",
-        "Tank must be topped off for buster."
-      ],
+      "hints": ["Stay with your chain partner."],
       "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/123/124283.webp",
       "NpcId": "226396"
     },
     "Geezle Gigazap": {
-      "hints": [
-        "Use cooldowns for Turbo Charge.",
-        "Don't electrify the water."
-      ],
+      "hints": ["Defensives for Turbo Charge.", "Kite the charge."],
       "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/243/125939.webp",
       "NpcId": "236950"
     }
