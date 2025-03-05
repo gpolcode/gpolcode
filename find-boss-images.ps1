@@ -1,16 +1,16 @@
 # Define JSON files
 $JsonFiles = @("1.json", "2.json")
 
-# Function to get Boss IDs from WowDB PTR
+# Function to get Boss IDs from WowDB
 Function Get-BossIdsFromWowDB {
     param(
         [string]$BossName
     )
 
-    Write-Host "`n🔎 Searching WowDB PTR for boss: $BossName"
+    Write-Host "`n🔎 Searching WowDB for boss: $BossName"
 
-    # Format the search URL for WowDB PTR (Exact Search)
-    $SearchUrl = "https://ptr.wowdb.com/npcs?filter-search=$($BossName -replace ' ', '%20')"
+    # Format the search URL for WowDB (Exact Search)
+    $SearchUrl = "https://wowdb.com/npcs?filter-search=$($BossName -replace ' ', '%20')"
     Write-Host "🔗 WowDB search URL: $SearchUrl"
 
     # Fetch WowDB search page
@@ -23,7 +23,7 @@ Function Get-BossIdsFromWowDB {
     }
 
     # Extract all NPC IDs from the WowDB search results
-    $BossIdMatches = $HtmlContent | Select-String -Pattern 'href="https://ptr.wowdb.com/npcs/(\d+)-[^"]+"' -AllMatches
+    $BossIdMatches = $HtmlContent | Select-String -Pattern 'href="https://wowdb.com/npcs/(\d+)-[^"]+"' -AllMatches
     
     # If no Boss IDs are found, return null
     If (-not $BossIdMatches) {
@@ -52,8 +52,8 @@ Function Get-WowheadImageUrl {
         return $null
     }
 
-    # Construct Wowhead PTR NPC page URL
-    $FullBossPageUrl = "https://www.wowhead.com/ptr-2/npc=$BossId"
+    # Construct Wowhead NPC page URL
+    $FullBossPageUrl = "https://www.wowhead.com/npc=$BossId"
     Write-Host "🔗 Wowhead NPC Page: $FullBossPageUrl"
 
     # Fetch the boss's individual page
