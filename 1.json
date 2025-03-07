@@ -100,7 +100,10 @@
       "NpcId": "226396"
     },
     "Geezle Gigazap": {
-      "hints": ["Defensives for Turbo Charge.", "Kite the charge."],
+      "hints": [
+        "Defensives for Turbo Charge.",
+        "Kite the charge into the water."
+      ],
       "image": "https://wow.zamimg.com/modelviewer/ptr2/webthumbs/npc/243/125939.webp",
       "NpcId": "236950"
     }
